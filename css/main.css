@@ -1,0 +1,64 @@
+/* CSS is for Presentation */
+
+/* Header Section */
+#main-header{
+    text-align:left;
+     background-color:coral;
+    color:white;
+    padding-left:20px;
+    margin:0;
+}
+
+/* Need to fix */
+head header a {
+    text-decoration: none;
+}
+
+
+/* Footer Section */
+#main-footer{
+    text-align:center;
+    font-size:18px;
+    background-color:coral;
+    color:white;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    background-color: grey;
+}
+
+nav li {
+    flex: auto;
+}
+
+nav a{
+    padding: 0.75em 1em;
+    border: 1px solid black;
+    /* border-radius: 5px; */
+    display: block;
+    
+    background-color: rebeccapurple;
+    background-image: linear-gradient(black, grey);
+    
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav a:hover {
+    background-image: linear-gradient(grey, black);
+}
+  
+nav a:active {
+    background-image: linear-gradient(skyblue, coral);
+}
+
+.current {
+    background-image: linear-gradient(coral, skyblue);
+}

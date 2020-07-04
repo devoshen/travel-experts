@@ -1,81 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Blog</title>
-	<meta name="description" content="Awesome blog by Stevyn">
-	<meta name="keywords" content="web design blog, web dev blog, Stevyn">
-	<style type="text/css">
-		#main-header{
-			text-align:center;
-			background-color:black;
-			color:white;
-			padding:10px;
-		}
-
-		#main-footer{
-			text-align:center;
-			font-size:18px;
-		}
-	</style>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TravelExperts Homepage</title>
+	<!-- external stylesheets for clearity and building my reusable code toolbox! -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/typography.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- css hero is home page specific -->
+    <link rel="stylesheet" href="css/hero.css">
 </head>
 <body>
 	<header id="main-header">
-		<h1>My Website</h1>
+		<!-- <img src="https://" alt="Travel Experts logo"> -->
+		<h1>Travel Experts</h1>
 	</header>
 
-	<a href="index.html">Go to index</a>
-
+	<nav>
+		<ul>
+		  <li><a href="#home">Home</a></li>
+		  <li><a href="#destinations">Destinations</a></li>
+		  <li><a href="#contact">Contact Us</a></li>
+		  <li><a href="login.html">Login</a></li>
+		  <li><a href="register.html">Sign-Up</a></li>
+		</ul>
+	</nav>
+		
 	<section>
-		<article class="post">
-			<h3>Blog Post One</h3>
-			<small>Posted by Stevyn on July 1, 2020</small>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<a href="post.html">Read More</a>
+		<!-- Destinations  -->
+		<article class="destinations">
+			<h3>Destinations</h3>
+			<h4>Your Dream Is Here!</h4>
+			
+			<small>Leave blank until assignment 2.</small>
 		</article>
+		
+		<!-- Contact Us  -->
+		<article class="contact-us">
+			<h3>Contact Us</h3>
+			
+			<!-- List -->
+			<ul>
+				<li>Office Address: 9 Some st SE, Calgary, AB, Canada</li>
+				<li>Office Number: 403-123-4567</li>
+				<li>Office Hours: Monday-Friday 8:00am-6:00pm</li>
+			</ul>
 
-		<article class="post">
-			<h3>Blog Post Two</h3>
-			<small>Posted by Stevyn on July 1, 2020</small>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<a href="post.html">Read More</a>
-		</article>
+			<br>
 
-		<article class="post">
-			<h3>Blog Post Three</h3>
-			<small>Posted by Stevyn on July 1, 2020</small>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<a href="post.html">Read More</a>
+			<!-- Table -->
+			<table>
+				<thead>
+					<tr>
+						<th>Agent</th>
+						<th>Cell Number</th>
+						<th>Eamil</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>John Doe</td>
+						<td>403-001-1234</td>
+						<td>jdoe@something.com</td>
+					</tr>
+					<tr>
+						<td>Mary Chen </td>
+						<td>403-002-1234</td>
+						<td>mchen@something.com</td>
+					</tr>
+					<tr>
+						<td>Sara Williams</td>
+						<td>403-003-1234</td>
+						<td>swilliams@something.com</td>
+					</tr>	
+				</tbody>
+			</table>
+
+			<br>
+
+			<!-- Forms -->
+			<form action="process.php" method="POST">
+				<div>
+					<label>Full Name</label>
+					<input type="text" name="fullName">
+				</div>
+				<br>
+				<div>
+					<label>Email</label>
+					<input type="email" name="email" placeholder="name@edu.sait.ca">
+				</div>
+				<br>
+				<div>
+					<label>Message</label>
+					<textarea name="message"></textarea>
+				</div>
+				<br>
+				<input type="submit" name="submit-button" value="Submit">
+			</form>	
 		</article>
 	</section>
-
-	<aside>
-		<h3>Categories</h3>
-		<nav>
-			<ul>
-				<li><a href="#">Category 1</a></li>
-				<li><a href="#">Category 2</a></li>
-				<li><a href="#">Category 3</a></li>
-			</ul>
-		</nav>
-	</aside>
-
+	
 	<footer id="main-footer">
-		<p>Copyright &copy; 2020, My Website</p>
+		<p>Copyright &copy; 2020 Travel Experts Ltd.</p>
 	</footer>
 
 
