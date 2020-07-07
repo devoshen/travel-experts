@@ -1,64 +1,100 @@
 /* CSS is for Presentation */
 
 /* Header Section */
-#main-header{
-    text-align:left;
-     background-color:coral;
-    color:white;
-    padding-left:20px;
-    margin:0;
+.frog {
+  width: 40px;
+  padding-right: 3px;
 }
 
-/* Need to fix */
-head header a {
-    text-decoration: none;
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+header{
+  padding-left:10px;
 
-/* Footer Section */
-#main-footer{
-    text-align:center;
-    font-size:18px;
-    background-color:coral;
-    color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    
+  background-color:mediumseagreen;
+ }
+
+header h1 a {
+  text-decoration: none;
+  color:white;
 }
 
-/* Navigation styles */
+/* Navbar */
 nav ul {
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    background-color: grey;
+  display: flex;
+  margin: 0;
+  justify-content: flex-end;
+  background-color: grey;
 }
 
 nav li {
-    flex: auto;
+  flex: auto;
 }
 
 nav a{
-    padding: 0.75em 1em;
-    border: 1px solid black;
-    /* border-radius: 5px; */
-    display: block;
+  padding: 0.75em 1em;
+  /* border: 1px solid black; */
+  /* border-radius: 5px; */
+  /* display: block; */
     
-    background-color: rebeccapurple;
-    background-image: linear-gradient(black, grey);
+  background-image: linear-gradient(grey, black);
     
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  text-decoration: none;
+  /* text-align: center; */
+  /* font-size: 18px; */
+  /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
 nav a:hover {
-    background-image: linear-gradient(grey, black);
+  background-image: linear-gradient(black, grey);
 }
   
 nav a:active {
-    background-image: linear-gradient(skyblue, coral);
+  background-image: linear-gradient(cornflowerblue, cadetblue);
 }
 
-.current {
-    background-image: linear-gradient(coral, skyblue);
+.current-page {
+  background-image: linear-gradient(Azure, black);
+}
+
+/* HERO Section */
+.hero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  background-color: aquamarine;
+  background-image: url('https://picsum.photos/id/1040/500/500');
+  background-size: cover;
+  background-position: center;
+
+  padding-right: 50px;
+    
+  height: 80vh;
+  min-height:300px;
+}
+
+/* Contact-us Section */
+#contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background-color: azure;
+}
+
+/* Footer Section */
+footer {
+  background-color: mediumseagreen;
+  color:white;
+  padding: 0.5em;
 }

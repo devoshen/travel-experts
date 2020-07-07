@@ -2,109 +2,104 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TravelExperts Homepage</title>
 	<!-- external stylesheets for clearity and building my reusable code toolbox! -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/typography.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!-- css hero is home page specific -->
-    <link rel="stylesheet" href="css/hero.css">
+	<link rel="stylesheet" href="css/hero.css">
 </head>
 <body>
-	<header id="main-header">
-		<!-- <img src="https://" alt="Travel Experts logo"> -->
-		<h1>Travel Experts</h1>
+	<!-- Header & Navbar-->
+	<header>
+		<div class="logo"> 
+			<a href="index.html"><img class="frog" src="images/frog-solid.svg" alt="Travel Experts Frog logo"></a>
+			<h1><a href="index.html">Travel Experts</a></h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#destinations">Destinations</a></li>
+				<li><a href="#contact-us">Contact Us</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Sign-Up</a></li>
+			</ul>
+		</nav>
 	</header>
 
-	<nav>
+	<!-- HERO Section  -->
+	<section class="hero">
+		<h2>Some slogan...</h2>
+	</section>	
+
+	<!-- Contact Us  -->
+	<section id="contact-us">
+		<h2>Contact Us</h2>
+		
+		<!-- List -->
 		<ul>
-		  <li><a href="#home">Home</a></li>
-		  <li><a href="#destinations">Destinations</a></li>
-		  <li><a href="#contact">Contact Us</a></li>
-		  <li><a href="login.html">Login</a></li>
-		  <li><a href="register.html">Sign-Up</a></li>
+			<li>Office Address: 9 Some st SE, Calgary, AB, Canada</li>
+			<li>Office Number: 403-123-4567</li>
+			<li>Office Hours: Monday-Friday 8:00am-6:00pm</li>
 		</ul>
-	</nav>
+		<br>
 		
-	<section>
-		<!-- Destinations  -->
-		<article class="destinations">
-			<h3>Destinations</h3>
-			<h4>Your Dream Is Here!</h4>
-			
-			<small>Leave blank until assignment 2.</small>
-		</article>
-		
-		<!-- Contact Us  -->
-		<article class="contact-us">
-			<h3>Contact Us</h3>
-			
-			<!-- List -->
-			<ul>
-				<li>Office Address: 9 Some st SE, Calgary, AB, Canada</li>
-				<li>Office Number: 403-123-4567</li>
-				<li>Office Hours: Monday-Friday 8:00am-6:00pm</li>
-			</ul>
+		<!-- Table -->
+		<table>
+			<thead>
+				<tr>
+					<th>Star Agents</th>
+					<th>Cell Number</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John Doe</td>
+					<td>403-001-1234</td>
+					<td>jdoe@something.com</td>
+				</tr>
+				<tr>
+					<td>Mary Chen </td>
+					<td>403-002-1234</td>
+					<td>mchen@something.com</td>
+				</tr>
+				<tr>
+					<td>Sara Williams</td>
+					<td>403-003-1234</td>
+					<td>swilliams@something.com</td>
+				</tr>	
+			</tbody>
+		</table>
+		<br>
 
+		<!-- Forms -->
+		<form action="process.php" method="POST">
+			<div>
+				<label>Full Name</label>
+				<input type="text" name="fullName">
+			</div>
 			<br>
-
-			<!-- Table -->
-			<table>
-				<thead>
-					<tr>
-						<th>Agent</th>
-						<th>Cell Number</th>
-						<th>Eamil</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>John Doe</td>
-						<td>403-001-1234</td>
-						<td>jdoe@something.com</td>
-					</tr>
-					<tr>
-						<td>Mary Chen </td>
-						<td>403-002-1234</td>
-						<td>mchen@something.com</td>
-					</tr>
-					<tr>
-						<td>Sara Williams</td>
-						<td>403-003-1234</td>
-						<td>swilliams@something.com</td>
-					</tr>	
-				</tbody>
-			</table>
-
+			<div>
+				<label>Email</label>
+				<input type="email" name="email" placeholder="name@edu.sait.ca">
+			</div>
 			<br>
-
-			<!-- Forms -->
-			<form action="process.php" method="POST">
-				<div>
-					<label>Full Name</label>
-					<input type="text" name="fullName">
-				</div>
-				<br>
-				<div>
-					<label>Email</label>
-					<input type="email" name="email" placeholder="name@edu.sait.ca">
-				</div>
-				<br>
-				<div>
-					<label>Message</label>
-					<textarea name="message"></textarea>
-				</div>
-				<br>
-				<input type="submit" name="submit-button" value="Submit">
-			</form>	
-		</article>
+			<div>
+				<label>Message</label>
+				<textarea name="message"></textarea>
+			</div>
+			<br>
+			<input type="submit" name="submit-button" value="Submit">
+		</form>	
 	</section>
 	
-	<footer id="main-footer">
+	<!-- Footer -->
+	<footer>
 		<p>Copyright &copy; 2020 Travel Experts Ltd.</p>
 	</footer>
-
 
 </body>
 </html>
