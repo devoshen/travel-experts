@@ -17,9 +17,10 @@
 
 
 ## Attributes 
-### Typography fonts 'Playfair Display' and 'Source Sans Pro' from Google Fonts https://developers.google.com/fonts
+### Typography('Playfair Display' and 'Source Sans Pro') from Google Fonts https://developers.google.com/fonts
 ### SVG logo from Font Awesome. https://fontawesome.com/license/free
 ### Pictures from lorem picsum photos. https://picsum.photos/
+### Forms stying from MDN resources. https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
 
 
 # h1

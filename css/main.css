@@ -83,14 +83,54 @@ nav a:active {
   min-height:300px;
 }
 
-/* Contact-us Section */
-#contact-us {
+/* Contact-Us Section */
+.contact-us {
+  background-color: azure;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  background-color: azure;
+    
 }
+
+form {
+  background-color: lightgrey;
+  /* Center the form of the page */
+  margin: 0 auto;
+  width: 450px;
+  /* Form outline */
+  padding: 1em;
+  border: 2px solid grey;
+  border-radius: 1em;
+}
+
+form div {
+  margin-top: 1em;
+}
+
+form label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+}
+
+input, textarea {
+  /* Unify text field font setting */
+  font: 1em sans-serif;
+  /* Uniform text field size */
+  width: 250px;
+  box-sizing: border-box;
+
+  border: 1px solid grey;
+}
+
+button {
+  background-color: lightcyan;
+  margin-left: 30%;
+  font-size: 1rem;
+}
+
+
 
 /* Footer Section */
 footer {

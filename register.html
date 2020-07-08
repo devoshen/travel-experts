@@ -8,64 +8,66 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/typography.css">
 	<link rel="stylesheet" href="css/main.css">
-	<!-- register specific css -->
-    <link rel="stylesheet" href="css/register.css">
+	<!-- login & register specific css -->
+    <link rel="stylesheet" href="css/login-register.css">
 
 </head>
 <body>
-	<header>
-		<div class="logo"> 
-			<a href="index.html"><img class="frog" src="images/frog-solid.svg" alt="Travel Experts Frog logo"></a>
-			<h1><a href="index.html">Travel Experts</a></h1>
+	<div class="box1">
+		<header>
+			<div class="logo"> 
+				<a href="index.html"><img class="frog" src="images/frog-solid.svg" alt="Travel Experts Frog logo"></a>
+				<h1><a href="index.html">Travel Experts</a></h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#destinations">Destinations</a></li>
+					<li><a href="index.html#contact-us">Contact Us</a></li>
+					<li><a href="login.html">Login</a></li>
+					<li><a class="current-page" href="register.html">Sign-Up</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="box2">
+			<h2 class="greeting">BON VOYAGE!</h2>
+			<form class="registerForm" action="#" method="post">
+				<fieldset>
+					<legend>Welcome to Travel Experts</legend>
+					<ul>
+						<li>
+							<label for="name">Full Name:</label>
+							<input type="text" id="name" name="user_name">
+						</li>
+						<li>
+							<label for="email">E-mail:</label>
+							<input type="email" id="email" name="user_email">
+						</li>
+						<li>
+							<label for="password">Password:</label>
+							<input type="password" id="pwd" name="pwd">
+						</li>
+						<li>
+							<label for="confirmPassword">Confirm-Password:</label>
+							<input type="password" id="confirm_pwd" name="confirm_pwd">
+						</li>
+						<li>
+							<label for="newsletter">Subscribe to Newsletter</label>
+							<input type="checkbox" id="newsletter" name="newsletter">
+						</li>
+						<li class="button">
+							<button type="submit"><strong>Register</strong></button>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="index.html#destinations">Destinations</a></li>
-				<li><a href="index.html#contact-us">Contact Us</a></li>
-				<li><a href="login.html">Login</a></li>
-				<li><a class="current-page" href="register.html">Sign-Up</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<section>
-		<form class="registerForm" action="https://formspree.io/xknqqqvd" method="post">
-			<ul>
-				<li class="greeting">
-					<h2>Bon Voyage!</h2>  
-				</li>
-				<li>
-					<label for="name">Full Name:</label>
-					<input type="text" id="name" name="user_name">
-				</li>
-				<li>
-					<label for="email">E-mail:</label>
-					<input type="email" id="email" name="user_email">
-				</li>
-				<li>
-					<label for="password">Password:</label>
-					<input type="password" id="pwd" name="pwd">
-				</li>
-				<li>
-					<label for="confirmPassword">Confirm-Password:</label>
-					<input type="password" id="confirm_pwd" name="confirm_pwd">
-				</li>
-				<li>
-					<label for="newsletter">Subscribe to Newsletter</label>
-					<input type="checkbox" id="newsletter" name="newsletter">
-				</li>
-				<li class="button">
-					<button type="submit"><strong>Confirm Registration</strong></button>
-				</li>
-			</ul>
-		</form>
-	</section>
-
-	<!-- Footer -->
-	<footer>
-		<p>Copyright &copy; 2020 Travel Experts Ltd.</p>
-	</footer>
-  
+		
+		<!-- Footer -->
+		<footer>
+			<p>Copyright &copy; 2020 Travel Experts Ltd.</p>
+		</footer>
+	</div>
 </body>
 </html>

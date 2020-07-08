@@ -1,13 +1,19 @@
-section {
+.box2 {
     background-image: linear-gradient(cornflowerblue, cadetblue);
     padding: 50px 0;
 }
 
+.box2 h2 {
+    text-align: center;
+}
+
+/* Form properties modified from MDN "Styling web forms" & "Your first forms"
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms */
 form {
     background-color: lightgrey;
     /* Center the form of the page */
     margin: 0 auto;
-    width: 400px;
+    width: 450px;
     /* Form outline */
     padding: 1em;
     border: 2px solid grey;
@@ -38,13 +44,13 @@ input {
     width: 150px;
     box-sizing: border-box;
 
-    border: 1px solid #999;
+    border: 1px solid grey;
 }
 
 .button {
     padding-left: 185px;
 }
 
-.greeting {
-    padding-left: 80px;
+form li button {
+    font-size: 16px;
 }
