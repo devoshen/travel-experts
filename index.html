@@ -7,9 +7,10 @@
 	<!-- external stylesheets for clearity and building my reusable code toolbox! -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/typography.css">
+	
+	<!-- home page specific -->
 	<link rel="stylesheet" href="css/main.css">
-	<!-- css hero is home page specific -->
-	<link rel="stylesheet" href="css/hero.css">
+	
 </head>
 <body>
 	<!-- Header & Navbar-->
@@ -22,7 +23,7 @@
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="#destinations">Destinations</a></li>
-				<li><a href="#contact-us">Contact Us</a></li>
+				<li><a href="index.html#contact-us">Contact Us</a></li>
 				<li><a href="login.html">Login</a></li>
 				<li><a href="register.html">Sign-Up</a></li>
 			</ul>
@@ -31,44 +32,45 @@
 
 	<!-- HERO Section  -->
 	<section class="hero">
-		<h2>Consider Traval Tips from the Experts</h2>
+		<h2>Traval Tips from the Travel Experts</h2>
+		<p>Sign Up Now for Exlusive Deals!</p>
 	</section>	
 
 	<!-- Contact Us  -->
-	<section class="contact-us">
-		<h2>Contact Us</h2>
-		
-		<!-- List -->
-		<ul>
-			<legend>Office Info</legend>
-			<li>Address: 9 Some st SE, Calgary, AB, Canada</li>
-			<li>Contact: 403-123-4567</li>
-			<li>Hours: Monday-Friday 8:00am-6:00pm</li>
-		</ul>
+	<main>
+		<h2 id="contact-us">CONTACT US</h2>
+			
+			<!-- List -->
+			<ul>
+				<li><strong>Office:</strong> 403-123-4567</li>
+				<li><strong>Email:</strong> info.travelexperts@edu.sait.ca</li>
+				<li><strong>Hours:</strong> 8:00AM-5:00PM Monday-Friday</li>
+				<li><strong>Address:</strong> 9 Some Ave SE, Calgary, AB, Canada T2P 0B4</li>
+			</ul>
 				
 		<!-- Paragraph -->
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eum soluta harum laboriosam aspernatur iusto. Deleniti officiis nam laborum, ratione, corrupti maxime fugit cumque distinctio, ducimus adipisci corporis esse perferendis!</p>
-	</section>
-
-	<!-- Forms -->
-	<form action="https://formspree.io/moqkkknb" method="POST">
-		<fieldset>
-			<legend>Send Us a Message</legend>
-			<div>
-				<label>Full Name</label>
-				<input type="text" name="fullName">
-			</div>
-			<div>
-				<label>Email</label>
-				<input type="email" name="email" placeholder="first.last@edu.sait.ca">
-			</div>
-			<div>
-				<label>Message</label>
-				<textarea name="message"></textarea>
-			</div>
-			<button type="submit"><strong>Submit</strong></button>
-		</fieldset>
-	</form>	
+	
+		<!-- Forms -->
+		<form action="https://formspree.io/moqkkknb" method="POST">
+			<fieldset>
+				<legend>Send Us a Message</legend>
+				<div>
+					<label>Full Name</label>
+					<input type="text" name="fullName">
+				</div>
+				<div>
+					<label>Email</label>
+					<input type="email" name="email" placeholder="first.last@edu.sait.ca">
+				</div>
+				<div>
+					<label>Message</label>
+					<textarea name="message"></textarea>
+				</div>
+				<button type="submit"><strong>Submit</strong></button>
+			</fieldset>
+		</form>	
+	</main>
 		
 	<!-- Footer -->
 	<footer>

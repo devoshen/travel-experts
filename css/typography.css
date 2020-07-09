@@ -34,11 +34,6 @@ footer {
 }
 
 
-.text-box {
-  /* line length: max for print should be 80-95 characters; for web: aim for 75 or less */ 
-  max-width: 75ch;
-}
-  
 .justify {
   text-align: justify;
 }

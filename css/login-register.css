@@ -1,19 +1,36 @@
-.box2 {
-    background-image: linear-gradient(cornflowerblue, cadetblue);
-    padding: 50px 0;
+.login {
+    background-image: url('https://picsum.photos/id/1051/500/500');
 }
 
-.box2 h2 {
+.register {
+    background-image: url('https://picsum.photos/id/124/500/500');
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    background-size: cover;
+    background-position: center;
+    
+    flex: 1;
+}
+
+main h2 {
     text-align: center;
 }
 
 /* Form properties modified from MDN "Styling web forms" & "Your first forms"
 https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms */
 form {
-    background-color: lightgrey;
+    background-image: linear-gradient(cornflowerblue, cadetblue);
     /* Center the form of the page */
-    margin: 0 auto;
-    width: 450px;
+    margin: auto;
+    width: 50em;
     /* Form outline */
     padding: 1em;
     border: 2px solid grey;
@@ -27,30 +44,39 @@ form ul {
 }
 
 form li {
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
-form label {
+main form label {
     /* Uniform size & alignment */
     display: inline-block;
-    width: 185px;
-    text-align: right;
+    width: 200px;
+    text-align: left;
 }
 
-input {
+main form input {
     /* Unify text field font setting */
     font: 1em sans-serif;
     /* Uniform text field size */
-    width: 150px;
+    width: 200px;
     box-sizing: border-box;
 
     border: 1px solid grey;
 }
 
-.button {
-    padding-left: 185px;
+.checkbox label {
+    width: 180px;
 }
 
-form li button {
-    font-size: 16px;
+.checkbox input {
+    width: 20px;
+}
+
+
+.button {
+    padding-left: 180px;
+}
+
+main form li button {
+    font-size: 18px;
 }
