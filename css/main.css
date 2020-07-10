@@ -15,9 +15,9 @@
 header{
   padding-left:10px;
 
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
     
   background-color:mediumseagreen;
   margin: 0;
@@ -40,15 +40,16 @@ nav ul {
   display: flex;
   margin: 0;
   justify-content: flex-end;
-  background-color: black;
+  background-color: mediumseagreen;
 }
 
 nav li {
   flex: none;
+  font-size: 0.9rem;
 }
 
 nav a{
-  padding: 0.8em 1em; 
+  padding: 0.5em 1em; 
   background-image: linear-gradient(grey, black);
     
   color: white;
@@ -102,20 +103,15 @@ main {
   background-color: azure;
   text-align: justify;
   margin: 0;
-  padding: 2em;
+  padding: 3em;
 }
 
 main h2 {
-  /* border: 2px solid grey; */
-  /* display: block; */
   text-align: center; 
-
-  /* padding: 0 1em; */
   margin: 0;
 }
 
 main ul {
-  /* border: 2px solid grey; */
   list-style-type: none;
   padding-left: 0;
 
@@ -126,9 +122,8 @@ main ul {
 }
 
 main p {
-  /* border: 2px solid grey; */
   /* line length(web): aim for 75 or less */ 
-  max-width: 75ch;
+  max-width: 60ch;
 
   padding: 0 1em;
   margin: 1em auto;
@@ -136,13 +131,15 @@ main p {
 
 main form {
   background-image: linear-gradient(cornflowerblue, cadetblue);
-  width: 450px;
-  
-  text-align: center; 
 
+  width: 50%;
+  min-width: 280px;
+  max-width: 550px;
+    
+  padding: 1em;
   border: 2px solid grey;
   border-radius: 1em;
-  padding: 0.5em 0.5em;
+  
   margin: 0 auto;
 }
 
@@ -153,24 +150,25 @@ main form div {
 main form label {
   /* Uniform size & alignment */
   display: inline-block;
-  width: 80px;
-  text-align: right;
+  width: 100%;
+  text-align: left;
 }
 
 main form input, main form textarea {
   /* Unify text field font setting */
   font: 1em sans-serif;
   /* Uniform text field size */
-  width: 250px;
+  width: 100%;
   box-sizing: border-box;
 
   border: 1px solid grey;
 }
 
 main form button {
-  background-color: azure;
-  margin-left: 30%;
   font-size: 1rem;
+  margin-left: 50%;
+  margin-top: 0.5em;
+  background-color: azure;
 }
 
 
@@ -180,7 +178,6 @@ footer {
   color:white;
   background-color: mediumseagreen;
   margin: 0;
-    /* padding: 1em; */
 }
 
 footer p {

@@ -5,7 +5,7 @@
 
 
 
-## Note to device test on iphone, android, and different browser.
+
 ## Need to fix navbar on narrow screen.
 
 
@@ -17,12 +17,12 @@
 #### Did not have enough content in Login and Register page for footer to reach bottom of page.
 #### Googled and found sticky footer on CSS Tricks with a flexbox solution.
 
+## Device test on phone and different browser.
 
+### Not sure what is preventing the hotizontal window to continue to minimize.
+### Originally assumed it was the navbar, but when changed the font size to 0.9rem it wasn't the reason.
 
-
-
-
-
+### Found some examples of "@media (min-width)" which can adjust CSS when certain screen size was currently used to further play with window responsiveness, but I run out of time to implement.
 
 
 
@@ -38,10 +38,3 @@
 
 
 
-
-# h1
-## h2
-### h3
-#### h4
-##### h5
-###### h6
