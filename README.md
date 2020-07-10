@@ -4,10 +4,7 @@
 ## Stevyn Shen
 
 
-
-
-## Need to fix navbar on narrow screen.
-
+# Problems:
 
 ## footer white space
 #### inspection appears to indicate footer has top/bottom margin of 18. Set footer, body, and main margins to 0 but white space still exists. Set display: block, inline, and inline-block but white space still exists.
@@ -19,16 +16,20 @@
 
 ## Device tested on iphone with Chrome.
 ### Home button on navbar appears cut off a bit.
-
+### Need to fix navbar on narrow screen.
 
 ### Not sure what is preventing the hotizontal window to continue to minimize.
 ### Originally assumed it was the navbar, but when changed the font size to 0.9rem it wasn't the reason.
+
+
+# Notes
 
 ### Found some examples of "@media (min-width)" which can adjust CSS when certain screen size was currently used to further play with window responsiveness, but I run out of time to implement.
 
 
 
-## Attributes 
+# Attributes 
+
 ### Typography('Playfair Display' and 'Source Sans Pro') from Google Fonts https://developers.google.com/fonts
 ### SVG logo from Font Awesome. https://fontawesome.com/license/free
 ### Pictures from lorem picsum photos. https://picsum.photos/
